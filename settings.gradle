@@ -10,6 +10,8 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        // Add Json Repository and Ignore the warning
+        jcenter()
     }
 }
 rootProject.name = "Tour Manager"

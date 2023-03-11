@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Tour Manager</string>
+    <string name="required">This field is required</string>
+    <string name="incorrect_username">Username is incorrect</string>
+    <string name="incorrect_password">Password is incorrect</string>
+    <string name="login_success">LOGIN SUCCESSFUL!!!</string>
+    <string name="login_failed">LOGIN FAILED!!!</string>
+    <string name="signin">Sign in</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="forget_password">Forget password?</string>
+    <string name="other_login">or sign in with</string>
 </resources>
