@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Quản lý Tour</string>
+    <string name="required">Trường này bắt buộc</string>
+    <string name="incorrect_username">Tên người dùng không hợp lệ</string>
+    <string name="incorrect_password">Mật khẩu không hợp lệ</string>
+    <string name="login_success">Đăng nhập thành công</string>
+    <string name="login_failed">Đăng nhập thất bại</string>
+    <string name="signin">Đăng nhập</string>
+    <string name="username">Tên người dùng</string>
+    <string name="password">Mật khẩu</string>
+    <string name="login">ĐĂNG NHẬP</string>
+    <string name="forget_password">Quên mật khẩu?</string>
+    <string name="other_login">hoặc đăng nhập với</string>
 </resources>
