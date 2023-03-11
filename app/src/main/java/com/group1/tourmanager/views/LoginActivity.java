@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
         // Sự kiện nhấp nút Đăng nhập - nnhiep 09.03.2023
         btnLogin.setOnClickListener(v -> {
             if (validateData()) {
-                if (String.valueOf(eTxtUserName.getText()).equals("admin") && String.valueOf(eTxtPassword.getText()).equals("123")) {
+                if (String.valueOf(eTxtUserName.getText()).trim().equals("admin") && String.valueOf(eTxtPassword.getText()).trim().equals("123")) {
                     // Correct - chuyển sang Main Activity
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     intent.putExtra("LoginState", true);
@@ -64,11 +64,11 @@ public class LoginActivity extends AppCompatActivity {
 
     // Kiểm tra Username - nnhiep 11.03.2023
     private boolean checkUsername() {
-        if (String.valueOf(eTxtUserName.getText()).isEmpty()) {
+        if (String.valueOf(eTxtUserName.getText()).trim().isEmpty()) {
             layout_username.setError(this.getResources().getString(R.string.required));
             return false;
         } else {
-            if (!String.valueOf(eTxtUserName.getText()).equals("admin")) {
+            if (!String.valueOf(eTxtUserName.getText()).trim().equals("admin")) {
                 layout_username.setError(this.getResources().getString(R.string.incorrect_username));
                 return false;
             } else {
@@ -80,11 +80,11 @@ public class LoginActivity extends AppCompatActivity {
 
     // Kiểm tra Password - nnhiep 11.03.2023
     private boolean checkPassword() {
-        if (String.valueOf(eTxtPassword.getText()).isEmpty()) {
+        if (String.valueOf(eTxtPassword.getText()).trim().isEmpty()) {
             layout_password.setError(this.getResources().getString(R.string.required));
             return false;
         } else {
-            if (!String.valueOf(eTxtPassword.getText()).equals("123")) {
+            if (!String.valueOf(eTxtPassword.getText()).trim().equals("123")) {
                 layout_password.setError(this.getResources().getString(R.string.incorrect_password));
                 return false;
             } else {
@@ -98,9 +98,7 @@ public class LoginActivity extends AppCompatActivity {
     private boolean validateData() {
         boolean isValid;
         isValid = checkUsername();
-        if (isValid) {
-            isValid = checkPassword();
-        }
+        isValid = checkPassword();
         return isValid;
     }
 }
