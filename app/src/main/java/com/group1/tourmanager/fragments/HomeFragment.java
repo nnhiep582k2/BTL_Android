@@ -18,8 +18,6 @@ import com.group1.tourmanager.R;
 public class HomeFragment extends Fragment {
     public HomeFragment() {}
 
-    public quoc;
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
