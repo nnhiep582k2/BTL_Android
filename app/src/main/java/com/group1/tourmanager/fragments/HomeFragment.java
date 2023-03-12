@@ -18,6 +18,7 @@ import com.group1.tourmanager.R;
 public class HomeFragment extends Fragment {
     public HomeFragment() {}
 
+    sech
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
