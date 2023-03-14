@@ -27,3 +27,5 @@ public enum  FragmentEnum {
         return currentFragment;
     }
 }
+
+
